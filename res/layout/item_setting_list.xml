@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/stcikly_list_view_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/x50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/x18" android:textColor="#ff000000" android:id="@id/txt_cmd_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x10" android:text="" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/img_arrow_r" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="@dimen/x10" android:src="@drawable/setting_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/x15" android:textColor="#ff000000" android:ellipsize="end" android:gravity="right" android:id="@id/txt_cmd_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x10" android:layout_marginRight="@dimen/x5" android:text="" android:singleLine="true" android:layout_weight="1.0" android:layout_toLeftOf="@id/img_arrow_r" android:layout_toRightOf="@id/txt_cmd_name" android:layout_centerVertical="true" />
+</RelativeLayout>

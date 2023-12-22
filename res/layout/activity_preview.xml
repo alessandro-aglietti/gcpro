@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@id/main_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_control_p" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/layout_top_bar_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/wifi_speed_p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_top_bar_2" android:background="#00ffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_top_bar_1">
+            <ImageView android:id="@id/back_button_p" android:padding="2.0dip" android:visibility="gone" android:layout_width="@dimen/x40" android:layout_height="@dimen/x40" android:src="@drawable/arrow_l" />
+            <Button android:textSize="@dimen/x12" android:textColor="@color/white" android:id="@id/btn_exit_p" android:background="#00ffffff" android:visibility="visible" android:layout_width="@dimen/x40" android:layout_height="@dimen/x20" android:text="@string/L_Cancel_WiFi" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/power_button_p" android:padding="8.0dip" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/kaiguan_up" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/battery_info_p" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="15.0dip" android:layout_toLeftOf="@id/txt_battery_p" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/wifi_info_p" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="88.0dip" android:src="@drawable/wifi_4" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="8.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txt_battery_p" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="15.0dip" android:layout_marginRight="15.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/img_solar_p" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="0.0dip" android:src="@drawable/brightness" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/img_rssi_p" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="106.0dip" android:src="@drawable/img_bt06" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="8.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txt_rssi_p" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="15.0dip" android:layout_marginRight="121.0dip" android:text="-100" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/info_text_p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x120" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/video_time_p" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:layout_below="@id/layout_top_bar_2" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_bottom_bar_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_above="@id/layout_bottom_bar_2">
+            <ImageView android:id="@id/video_mode_p" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/video00" android:layout_weight="1.0" />
+            <ImageView android:id="@id/photo_mode_p" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/photo00" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_bottom_bar_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/album_button_p" android:padding="4.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/playback" android:layout_weight="1.0" />
+            <ImageView android:id="@id/bt_start_stop_p" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/video_start" android:layout_weight="1.0" />
+            <ImageView android:id="@id/setting_button_p" android:padding="4.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/device_set00" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/layout_control_l" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/layout_top_bar_l_1" android:background="@drawable/alpha_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_info_bar_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="right" android:id="@id/video_time_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/info_text_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/wifi_speed_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip" android:text="" />
+            </LinearLayout>
+            <ImageView android:id="@id/wifi_info_l" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/wifi_4" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/battery_info_l" android:layout_width="35.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/wifi_info_l" android:layout_centerVertical="true" />
+            <TextView android:textSize="8.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txt_battery_l" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="15.0dip" android:text="" android:layout_toRightOf="@id/battery_info_l" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/img_rssi_l" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/img_bt06" android:layout_toRightOf="@id/txt_battery_l" android:layout_centerVertical="true" />
+            <TextView android:textSize="8.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txt_rssi_l" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="15.0dip" android:text="-100" android:layout_toRightOf="@id/img_rssi_l" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/img_solar_l" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/brightness" android:layout_toRightOf="@id/img_rssi_l" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/bt_start_stop_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_start_h" android:text="OnOff" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_bottom_bar_l" android:background="@drawable/alpha_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/video_mode_l" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0sp" android:src="@drawable/video00" android:layout_weight="1.0" />
+            <ImageView android:id="@id/photo_mode_l" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/photo00" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="36.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/txt_player_info" android:background="@drawable/video_list_length_bg" android:padding="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

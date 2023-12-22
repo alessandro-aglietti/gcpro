@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ocean.widget.MyItemRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/new_grid_item_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/new_grid_item_selected" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/select01" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/new_grid_item_downed" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/sd_down" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/new_grid_item_download_front" android:background="#88000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ocean.widget.CircleProgressView android:id="@id/new_grid_item_download_progress" android:background="@drawable/circle3_bg" android:focusable="false" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" app:circleProgressColor="#ffffffff" app:circleProgressStartAnimation="roll" app:circleProgressTextColor="@color/white" app:circleProgressTextSize="10.0sp" app:circleProgressThickness="2.0dip" app:circleProgressValue="75" />
+    </RelativeLayout>
+</com.ocean.widget.MyItemRelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/fragment_hello_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <GridView android:gravity="center" android:id="@id/main_gridView" android:padding="0.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+    <com.ocean.widget.RotateLoading android:layout_gravity="center" android:id="@id/ablum_loading" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" app:loading_color="#ffc9b0c1" app:loading_speed="12" app:loading_width="5.0dip" />
+    <TextView android:gravity="center" android:id="@id/lab_loading" android:background="@drawable/label_round" android:visibility="gone" android:layout_width="@dimen/x100" android:layout_height="@dimen/x100" android:text="Please wait..." android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/page_draw_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/video_pre" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/list_video" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffff0000" android:layout_gravity="bottom|center" android:id="@id/progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.ocean.widget.CircleProgressView android:id="@id/delete_button" android:background="@drawable/circle3_bg" android:focusable="false" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:circleProgressColor="#ffff8a00" app:circleProgressStartAnimation="roll" app:circleProgressTextColor="@color/black" app:circleProgressTextSize="10.0sp" app:circleProgressThickness="2.0dip" app:circleProgressValue="75" />
+    <ImageView android:id="@id/video_download" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/select00" android:layout_toLeftOf="@id/delete_button" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/info_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/video_download" android:layout_toRightOf="@id/page_draw_layout" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/black" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/black" android:id="@id/size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

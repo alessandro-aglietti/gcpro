@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="advanced_options_divider" format="reference|color" />
+    <attr name="advanced_options_style" format="reference" />
+    <attr name="alpha" format="float" />
+    <attr name="audio_browser_separator" format="reference|color" />
+    <attr name="audio_player_header_time" format="reference|color" />
+    <attr name="audio_playlist_shadow" format="reference" />
+    <attr name="background_header" format="reference|color" />
+    <attr name="background_menu" format="reference|color" />
+    <attr name="background_menu_divider" format="reference|color" />
+    <attr name="background_player" format="reference|color" />
+    <attr name="background_playlist" format="reference|color" />
+    <attr name="circleProgressColor" format="color" />
+    <attr name="circleProgressStartAngle" format="integer" />
+    <attr name="circleProgressStartAnimation">
+        <enum name="fadeIn" value="2" />
+        <enum name="incremental" value="3" />
+        <enum name="none" value="0" />
+        <enum name="roll" value="1" />
+        <enum name="thicknessExpand" value="4" />
+    </attr>
+    <attr name="circleProgressStartAnimationDuration" format="integer" />
+    <attr name="circleProgressText" format="string" />
+    <attr name="circleProgressTextColor" format="color" />
+    <attr name="circleProgressTextSize" format="dimension" />
+    <attr name="circleProgressThickness" format="dimension" />
+    <attr name="circleProgressValue" format="integer" />
+    <attr name="coordinatorLayoutStyle" format="reference" />
+    <attr name="cpb_colorIndicator" format="color" />
+    <attr name="cpb_colorIndicatorBackground" format="color" />
+    <attr name="cpb_colorProgress" format="color" />
+    <attr name="cpb_cornerRadius" format="dimension" />
+    <attr name="cpb_iconComplete" format="reference" />
+    <attr name="cpb_iconError" format="reference" />
+    <attr name="cpb_paddingProgress" format="dimension" />
+    <attr name="cpb_selectorComplete" format="reference" />
+    <attr name="cpb_selectorError" format="reference" />
+    <attr name="cpb_selectorIdle" format="reference" />
+    <attr name="cpb_textComplete" format="string" />
+    <attr name="cpb_textError" format="string" />
+    <attr name="cpb_textIdle" format="string" />
+    <attr name="cpb_textProgress" format="string" />
+    <attr name="font" format="reference" />
+    <attr name="fontProviderAuthority" format="string" />
+    <attr name="fontProviderCerts" format="reference" />
+    <attr name="fontProviderFetchStrategy">
+        <enum name="async" value="1" />
+        <enum name="blocking" value="0" />
+    </attr>
+    <attr name="fontProviderFetchTimeout" format="integer">
+        <enum name="forever" value="-1" />
+    </attr>
+    <attr name="fontProviderPackage" format="string" />
+    <attr name="fontProviderQuery" format="string" />
+    <attr name="fontStyle">
+        <enum name="italic" value="1" />
+        <enum name="normal" value="0" />
+    </attr>
+    <attr name="fontVariationSettings" format="string" />
+    <attr name="fontWeight" format="integer" />
+    <attr name="font_default" format="reference|color" />
+    <attr name="font_light" format="reference|color" />
+    <attr name="header_fadein_overlay" format="reference" />
+    <attr name="header_fadeout_overlay" format="reference" />
+    <attr name="ic_audio_player_dots" format="reference" />
+    <attr name="ic_down_style" format="reference" />
+    <attr name="ic_equalizer_normal_style" format="reference" />
+    <attr name="ic_jumpto_normal_style" format="reference" />
+    <attr name="ic_menu_audio" format="reference" />
+    <attr name="ic_menu_folder" format="reference" />
+    <attr name="ic_menu_history" format="reference" />
+    <attr name="ic_menu_video" format="reference" />
+    <attr name="ic_move_media" format="reference" />
+    <attr name="ic_next" format="reference" />
+    <attr name="ic_pause" format="reference" />
+    <attr name="ic_play" format="reference" />
+    <attr name="ic_playlist_normal" format="reference" />
+    <attr name="ic_playlist_pressed" format="reference" />
+    <attr name="ic_previous" format="reference" />
+    <attr name="ic_repeat_normal" format="reference" />
+    <attr name="ic_repeat_one" format="reference" />
+    <attr name="ic_repeat_pressed" format="reference" />
+    <attr name="ic_shuffle_normal" format="reference" />
+    <attr name="ic_shuffle_pressed" format="reference" />
+    <attr name="ic_sleep_normal_style" format="reference" />
+    <attr name="ic_speed_normal_style" format="reference" />
+    <attr name="ic_up_style" format="reference" />
+    <attr name="item_common_pressed" format="reference|color" />
+    <attr name="item_common_selected" format="reference|color" />
+    <attr name="item_count" format="integer" />
+    <attr name="item_footer" format="reference|color" />
+    <attr name="keylines" format="reference" />
+    <attr name="layout_anchor" format="reference" />
+    <attr name="layout_anchorGravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="layout_behavior" format="string" />
+    <attr name="layout_dodgeInsetEdges">
+        <flag name="all" value="0x00000077" />
+        <flag name="bottom" value="0x00000050" />
+        <flag name="end" value="0x00800005" />
+        <flag name="left" value="0x00000003" />
+        <flag name="none" value="0x00000000" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="layout_insetEdge">
+        <enum name="bottom" value="80" />
+        <enum name="end" value="8388613" />
+        <enum name="left" value="3" />
+        <enum name="none" value="0" />
+        <enum name="right" value="5" />
+        <enum name="start" value="8388611" />
+        <enum name="top" value="48" />
+    </attr>
+    <attr name="layout_keyline" format="integer" />
+    <attr name="list_menu" format="reference|color" />
+    <attr name="list_subtitle" format="reference|color" />
+    <attr name="list_title" format="reference|color" />
+    <attr name="list_title_last" format="reference|color" />
+    <attr name="loading_color" format="color" />
+    <attr name="loading_speed" format="integer" />
+    <attr name="loading_width" format="dimension" />
+    <attr name="marginTopContent" format="dimension" />
+    <attr name="mini_player_top_shadow" format="reference" />
+    <attr name="overhangSize" format="dimension" />
+    <attr name="playlist_item_drag_shadow" format="reference|color" />
+    <attr name="playlist_item_footer" format="reference|color" />
+    <attr name="shadow_position" format="integer" />
+    <attr name="statusBarBackground" format="reference|color" />
+    <attr name="ttcIndex" format="integer" />
+    <attr name="video_player_overlay" format="reference|color" />
+</resources>
